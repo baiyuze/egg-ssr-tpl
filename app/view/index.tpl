@@ -6,5 +6,5 @@
   <body>
     <div id='root'></div>
   </body>
-  <script>{{jsBundle}}</script>
+  <script>{{jsBundleFunc}}</script>
 </html>

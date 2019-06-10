@@ -3,6 +3,8 @@
 'use strict';
 const webpackConfigServer = require('./webpack.server');
 const webpackConfigClient = require('./webpack.client');
+const path = require('path');
+
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -23,9 +25,12 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
+  config.view = {
+    root: path.join(appInfo.baseDir, 'app/view')
+  };
 
   // 添加 view 配置
-  exports.view = {
+  config.view = {
     defaultViewEngine: 'nunjucks',
     mapping: {
       '.tpl': 'nunjucks',

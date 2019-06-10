@@ -25,7 +25,7 @@ exports.serverOut = {
 // client out
 exports.clientOut = {
   filename: '[name].js',
-  path: path.join(process.cwd(), 'app/view/server'),
+  path: path.join(process.cwd(), 'app/view/client'),
   libraryTarget: 'commonjs'
 }
 // 解析文件类型

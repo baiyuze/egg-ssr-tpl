@@ -8,6 +8,7 @@ const clientConfig = {
   output: webpackCommon.clientOut,
   mode: process.env.NODE_ENV,
   resolve: webpackCommon.resolve,
+  devtool: 'source-map',
   module: {
     rules: [
       webpackCommon.babel,
